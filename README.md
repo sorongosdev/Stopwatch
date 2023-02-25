@@ -10,7 +10,7 @@
  3. 랩 기능
   * 코틀린에서 텍스트뷰를 동적으로 추가하기
  4. 타이머 3초전 알림음
-  * ToneGenerator 사용
+  * ToneGenerator 사용     
 ![image](https://user-images.githubusercontent.com/61692372/221339307-0f305ce3-812e-4329-846b-a1295093086e.png)
 ![image](https://user-images.githubusercontent.com/61692372/221339360-dee7cc0b-9f98-4aeb-9564-128e8cc10ae3.png)
 ![image](https://user-images.githubusercontent.com/61692372/221339394-ab187cdf-355d-4e87-880d-16d6f5029be1.png)
