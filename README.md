@@ -12,7 +12,7 @@
  4. 타이머 3초전 알림음
   * ToneGenerator 사용
  ## 스크린샷
- 1.초기 화면
+ 1.초기 화면    
 <img src="https://user-images.githubusercontent.com/61692372/221339307-0f305ce3-812e-4329-846b-a1295093086e.png" width="200" height="380"/>
  2.타이머 동작
 <img src="https://user-images.githubusercontent.com/61692372/221339360-dee7cc0b-9f98-4aeb-9564-128e8cc10ae3.png" width="200" height="380"/>
