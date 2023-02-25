@@ -22,3 +22,8 @@
 <img src="https://user-images.githubusercontent.com/61692372/221339394-ab187cdf-355d-4e87-880d-16d6f5029be1.png" width="200" height="380"/><br>
  5.랩 기록    
 <img src="https://user-images.githubusercontent.com/61692372/221339399-cb772b56-67c5-4e70-b044-0c613d23e50b.png" width="200" height="380"/><br>
+<style>
+ .img{
+  width : 200;
+  height : 300;
+</style>
