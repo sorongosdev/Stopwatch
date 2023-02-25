@@ -13,12 +13,12 @@
   * ToneGenerator 사용
  ## 스크린샷
  1.초기 화면
-<center><img src="https://user-images.githubusercontent.com/61692372/221339307-0f305ce3-812e-4329-846b-a1295093086e.png" width="200" height="380"/></center><br>
+<img src="https://user-images.githubusercontent.com/61692372/221339307-0f305ce3-812e-4329-846b-a1295093086e.png" width="200" height="380"/><br>
  2.타이머 설정    
-<center><img src="https://user-images.githubusercontent.com/61692372/221339758-38c0ddcc-8066-480e-a6bd-61fdf2409fd6.png" width="200" height="380"/></center><br>
+<img src="https://user-images.githubusercontent.com/61692372/221339758-38c0ddcc-8066-480e-a6bd-61fdf2409fd6.png" width="200" height="380"/><br>
  3.타이머 동작    
-<center><img src="https://user-images.githubusercontent.com/61692372/221339360-dee7cc0b-9f98-4aeb-9564-128e8cc10ae3.png" width="200" height="380"/></center><br>
+<img src="https://user-images.githubusercontent.com/61692372/221339360-dee7cc0b-9f98-4aeb-9564-128e8cc10ae3.png" width="200" height="380"/><br>
  4.스톱워치 동작    
-<center><img src="https://user-images.githubusercontent.com/61692372/221339394-ab187cdf-355d-4e87-880d-16d6f5029be1.png" width="200" height="380"/></center><br>
+<img src="https://user-images.githubusercontent.com/61692372/221339394-ab187cdf-355d-4e87-880d-16d6f5029be1.png" width="200" height="380"/><br>
  5.랩 기록    
-<center><img src="https://user-images.githubusercontent.com/61692372/221339399-cb772b56-67c5-4e70-b044-0c613d23e50b.png" width="200" height="380"/></center><br>
+<img src="https://user-images.githubusercontent.com/61692372/221339399-cb772b56-67c5-4e70-b044-0c613d23e50b.png" width="200" height="380"/><br>
