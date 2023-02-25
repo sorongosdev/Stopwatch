@@ -1,11 +1,12 @@
 package com.sorongos.stopwatch
 
-import android.graphics.Point
-import android.os.Build
+
+import android.media.AudioManager
+import android.media.ToneGenerator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.annotation.RequiresApi
+import android.view.Gravity
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.view.isVisible
 import com.sorongos.stopwatch.databinding.ActivityMainBinding
@@ -82,6 +83,15 @@ class MainActivity : AppCompatActivity() {
                     binding.countdownProgressBar.progress = progress.toInt()
                 }
             }
+            if(currentDeciSecond == 0 && currentCountDownDeciSecond < 31
+                && currentCountDownDeciSecond % 10 == 0) { //비프음
+                val toneType = if(currentCountDownDeciSecond == 0) ToneGenerator.TONE_CDMA_HIGH_L
+                else ToneGenerator.TONE_CDMA_ANSWER
+
+                //stream alarm 알람 소리 크기로
+                ToneGenerator(AudioManager.STREAM_ALARM, ToneGenerator.MAX_VOLUME)
+                    .startTone(toneType, 100)
+            }
         }
     }
 
@@ -100,8 +110,12 @@ class MainActivity : AppCompatActivity() {
         binding.timeTextView.text = "00:00"
         binding.tickTextView.text = "0"
 
+        //카운트다운 그룹 다시 보이게
         binding.countdownGroup.isVisible = true
         initCountDownViews()
+
+        //완전 정지되면 기록 텍스트뷰들을 삭제
+        binding.lapContainerLinearLayout.removeAllViews()
     }
 
     private fun pause() {
@@ -110,7 +124,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun lap() {
+        if(currentDeciSecond == 0) return
 
+        val container = binding.lapContainerLinearLayout
+        //동적으로 텍스트뷰 생성
+        TextView(this).apply {
+            textSize = 20f
+            gravity = Gravity.CENTER
+            val minutes = currentDeciSecond.div(10) / 60
+            val seconds = currentDeciSecond.div(10) % 60
+            val deciSeconds = currentDeciSecond % 10
+            text = container.childCount.inc().toString() + String.format( //몇번째 랩인지 넘버링
+                "   %02d:%02d %01d",
+                minutes,
+                seconds,
+                deciSeconds
+            )
+            setPadding(30, 30, 30, 30)
+        }.let{labTextView ->
+            container.addView(labTextView, 0)
+        }
+        
     }
 
     /**카운트 다운 초를 설정하는 다이얼로그를 띄움*/
